@@ -8,11 +8,6 @@
     </head>
     <body>
         <div class="container">
-            <ul class="navigation">
-                <li class="navigate"><a class="navigation-content" href="Default.asp">Home</a></li>
-                <li class="navigate"><a class="navigation-content" href="contact.asp">About</a></li>
-                <li class="navigate"><a class="navigation-content" href="About.asp">Contact</a></li>
-            </ul>
             <header class="jumbotron">
                 <h1 class="jumbotron-header">Geert Heemskerk</h1>
                 <h1 class="jumbotron-subject">Developer</h1>
@@ -68,5 +63,6 @@
                      <button class="send" type="submit" form="contact-form" value="Submit">Send</button>
                 </form>
             </div>
+            <a href="#top" class="scrollToTop">Scroll To Top</a>
     </body>
 </html>
