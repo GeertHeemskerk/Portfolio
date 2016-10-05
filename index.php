@@ -1,8 +1,33 @@
 <!DOCTYPE html>
+<?php
+  if(empty($_POST) === false){
+    $errors = array();
+
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $subject = $_POST['subject'];
+    $comment = $_POST['comment'];
+
+    if(empty($name) === true || empty($email) === true || empty($subject) === true || empty($comment) === true){
+      $errors[] = 'Your name, email + subject + comment are required!';
+    } else {
+      if(filter_var($email, FILTER_VALIDATE_EMAIL) === false){
+        $errors[] = 'The given email is not correct or does not exist!';
+      }
+      if(ctype_alpha($name) === false){
+        $errors[] = 'Your full name cannot contain non-letters';
+      }
+      echo "Name: $name<br>";
+      echo "Email-address: $email<br>";
+      echo "Subject: $subject<br>";
+      echo "Comment: $comment";
+    }
+  }
+ ?>
 <html lang="en">
     <head>
         <title>Portfolio Geert Heemskerk</title>
-        <link rel="stylesheet" type="text/css" href="src/css/index.css">
+        <link rel="stylesheet" type="text/css" href="src/css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Monda" rel="stylesheet">
     </head>
     <body>
@@ -36,7 +61,7 @@
                 </div>
                 <section class="jumbotron">
                 </section>
-                <form class="contact-form">
+                <form action="" method="post" class="contact-form">
                   <h2 class="contact-header">Contact</h2>
                      <label>Full name</label>
                      <input class="input-name" name="name" type="text" placeholder="John Doe" required/>
@@ -45,8 +70,8 @@
                      <label>Subject</label>
                      <input class="input-subject" name="subject" type="text" placeholder="Subject..."required/>
                      <label>Comment</label>
-                     <textarea class="input-comment" name="email" type="text" placeholder="I want to contact you because..."required></textarea>
-                     <button class="send" type="submit" form="contact-form" value="Submit">Send</button>
+                     <textarea class="input-comment" name="comment" type="text" placeholder="I want to contact you because..."required></textarea>
+                     <button class="send" type="submit" value="Submit">Send</button>
                 </form>
             </div>
             <a href="#top" class="scrollToTop">Scroll To Top</a>
