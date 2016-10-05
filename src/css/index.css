@@ -6,6 +6,10 @@
     font-family: 'Monda', sans-serif;
 }
 
+label{
+  display: block;
+}
+
 input{
   background-color: #e6e6e6;
   width: 50%;
@@ -93,45 +97,31 @@ textarea{
 }
 
 .skillsLeft{
-    font-weight: bold;
-    width: 50%;
+    width: 33%;
     float: left;
     background-color: white;
 }
 
+.skillsMiddle{
+  float: left;
+  width: 33%;
+  background-color: white;
+}
 
 .skillsRight{
-    font-weight: bold;
     float: left;
-    width: 50%;
+    width: 33%;
     background-color: white;
 }
 
-.progressbar{
-    width: 250px;
-    height: 30px;
-    margin-bottom: 4%;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: none;
+.skillsImages{
+  width: 75%;
+  margin-top: -10%;
 }
 
-progress::-webkit-progress-bar /* chrome (kleuren van bar) */
-{
-    background-color: lightgrey;
-    border-radius: 10px;
-}
-
-progress::-webkit-progress-value /* chrome (kleuren van value) */
-{
-    border-radius: 10px;
-    background-color: #d81f1f;
-}
-
-progress::-moz-progress-bar
-{
-    background-color: #d81f1f;
+.skills-middle-image{
+  width: 30%;
+  margin-top: -5%;
 }
 
 /*End of Information*/
@@ -191,6 +181,13 @@ progress::-moz-progress-bar
     .info-container-right{
         width: 100vw;
         margin: 0;
+    }
+    .skillsImages{
+      margin-top: -20%;
+    }
+    .skills-middle-image{
+      width: 65%;
+      margin-top: -20%;
     }
     .skillsLeft{
         width: 100%;
