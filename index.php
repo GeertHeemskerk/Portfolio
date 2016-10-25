@@ -103,7 +103,9 @@
                     <h2>I</h2>
                     <h2>Want</h2>
                     <h2>A</h2>
-                    <h2>Color for this footer :(</h2>
+                    <h2>Color for</h2>
+                    <h2>this footer</h2>
+                    <h2>:(</h2>
                 </div>
             <a href="#top" class="scroll-to-top">Scroll To Top</a>
         <script rel="src/js/index.js" type="text/javascript"></script>
