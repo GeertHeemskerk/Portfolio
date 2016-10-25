@@ -2,37 +2,40 @@
 <html lang="en">
     <head>
         <title>Portfolio Geert Heemskerk</title>
-        <link rel="stylesheet" type="text/css" href="src/css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Monda" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="src/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="src/css/main.css">
     </head>
     <body>
         <div class="container">
             <header class="jumbotron">
-                <h1 class="jumbotron-header">Geert Heemskerk</h1>
-                <h2 class="jumbotron-subject">Developer</h1>
+                <h2 class="jumbotron-header">Geert Heemskerk</h2>
+                <h2 class="jumbotron-subject">Developer</h2>
                 <div class="profile-picture">
                 </div>
                 <h2 class="jumbotron-info">Scroll down to read more about me</h2>
             </header>
             <div class="info-wrapper">
-                <h2 class="info-wrapper-header">About</h2>
-                <div class="info-container-left">
-                  <h2>About me</h2>
-                  <p class="wrapper-content">Hi!, My name is Geert Heemskerk I'm 18 years old. I am currently on an intership at Competa IT located in Rijswijk, this is my second periode of intership (2 times half a year). I am still learning so much on this intership about new stuff like frameworks and methods, I am in my third year of school, that is also the last year of my MBO 4 Application developer education. After this education I probably go for an eduction simmular like the one i am doing right now. But I think I'm going towards an eduction that focusses on design or interaction with clients.</p>
+                <section class="info-wrapper-content">
+                  <h2 class="info-wrapper-header">About</h2>
+                  <div class="info-container-left">
+                    <h2>About me</h2>
+                    <p class="wrapper-content">Hi!, My name is Geert Heemskerk I'm 18 years old. I am currently on an intership at Competa IT located in Rijswijk, this is my second periode of intership (2 times half a year). I am still learning so much on this intership about new stuff like frameworks and methods, I am in my third year of school, that is also the last year of my MBO 4 Application developer education. After this education I probably go for an eduction simmular like the one i am doing right now. But I think I'm going towards an eduction that focusses on design or interaction with clients. But I am still not sure what education would be the best for me :(</p>
+                  </div>
+                      <div class="info-container-right">
+                        <h2>Overall experience</h2>
+                        <p class="wrapper-content">I am going to tell a short story about my overall experience with development. I worked on different projects on school and most of all at Competa IT. For example we worked on a project for HHS (Haagse Hoge School), we had to work with back-end kenyans, so we had to talk english and via slack. sometimes there were miscommunications and we had to solve them. I learned that you have to be patient to achieve goals. I had to learn new develop languages to achive the goals that needed to be achived! I'm very driven to learn new languages and participate in projects, questions?? contact me below!.</p>
+                      </div>
+                </section>
                 </div>
-                    <div class="info-container-right">
-                      <h2>Overall experience</h2>
-                      <p class="wrapper-content">I am going to tell a short story about my overall experience with development. I worked on different projects on school and most of all at Competa IT. For example we worked on a project for HHS (Haagse Hoge School), we had to work with back-end kenyans, so we had to talk english and via slack. sometimes there were miscommunications and we had to solve them. I learned that you have to be patient to achieve goals. I had to learn new develop languages to achive the goals that needed to be achived! I'm very driven to learn new languages and participate in projects, questions?? contact me below!.</p>
+                <div class="info-container-bottom">
+                  <h2 class="info-wrapper-header">Skills</h2>
+                    <div class="skills-left">
+                      <img class="skills-images" src="img/skills-left.png" alt="skills-left">
                     </div>
-                    <div class="info-container-bottom">
-                      <h2 class="info-wrapper-header">Skills</h2>
-                        <div class="skills-left">
-                          <img class="skills-images" src="img/skills-left.png" alt="skills-left">
-                        </div>
-                          <img class="skills-middle-image" src="img/skills-middle.png" alt="skills-middle">
-                        <div class="skills-right">
-                          <img class="skills-images" src="img/skills-right.png" alt="skills-right">
-                        </div>
+                      <img class="skills-middle-image" src="img/skills-middle.png" alt="skills-middle">
+                    <div class="skills-right">
+                      <img class="skills-images" src="img/skills-right.png" alt="skills-right">
                     </div>
                 </div>
                 <section class="jumbotron">
