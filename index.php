@@ -1,29 +1,4 @@
 <!DOCTYPE html>
-<?php
-  if(empty($_POST) === false){
-    $errors = array();
-
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $subject = $_POST['subject'];
-    $comment = $_POST['comment'];
-
-    if(empty($name) === true || empty($email) === true || empty($subject) === true || empty($comment) === true){
-      $errors[] = 'Your name, email + subject + comment are required!';
-    } else {
-      if(filter_var($email, FILTER_VALIDATE_EMAIL) === false){
-        $errors[] = 'The given email is not correct or does not exist!';
-      }
-      if(ctype_alpha($name) === false){
-        $errors[] = 'Your full name cannot contain non-letters';
-      }
-      echo "Name: $name<br>";
-      echo "Email-address: $email<br>";
-      echo "Subject: $subject<br>";
-      echo "Comment: $comment";
-    }
-  }
- ?>
 <html lang="en">
     <head>
         <title>Portfolio Geert Heemskerk</title>
@@ -37,6 +12,7 @@
                 <h2 class="jumbotron-subject">Developer</h1>
                 <div class="profile-picture">
                 </div>
+                <h2 class="jumbotron-info">Scroll down to read more about me</h2>
             </header>
             <div class="info-wrapper">
                 <h2 class="info-wrapper-header">About</h2>
@@ -50,12 +26,12 @@
                     </div>
                     <div class="info-container-bottom">
                       <h2 class="info-wrapper-header">Skills</h2>
-                        <div class="skillsLeft">
-                          <img class="skillsImages" src="img/skills-left.png" alt="skillsLeft">
+                        <div class="skills-left">
+                          <img class="skills-images" src="img/skills-left.png" alt="skills-left">
                         </div>
-                          <img class="skills-middle-image" src="img/skills-middle.png" alt="skillsmiddle">
-                        <div class="skillsRight">
-                          <img class="skillsImages" src="img/skills-right.png" alt="skillsRight">
+                          <img class="skills-middle-image" src="img/skills-middle.png" alt="skills-middle">
+                        <div class="skills-right">
+                          <img class="skills-images" src="img/skills-right.png" alt="skills-right">
                         </div>
                     </div>
                 </div>
@@ -63,18 +39,70 @@
                 </section>
                 <form action="" method="post" class="contact-form">
                   <h2 class="contact-header">Contact</h2>
-                     <label>Full name</label>
-                     <input class="input-name" name="name" type="text" placeholder="John Doe" required/>
+                     <label>First name</label>
+                     <input class="input-name" name="firstname" type="text" placeholder="John"/>
+                     <label>Last name</label>
+                     <input class="input-name" name="lastname" type="text" placeholder="Doe"/>
                      <label>Email</label>
-                     <input class="input-email" name="email" type="text" placeholder="JohnDoe@gmail.com" required/>
+                     <input class="input-email" name="email" type="text" placeholder="JohnDoe@gmail.com"/>
                      <label>Subject</label>
-                     <input class="input-subject" name="subject" type="text" placeholder="Subject..."required/>
+                     <input class="input-subject" name="subject" type="text" placeholder="Subject..."/>
                      <label>Comment</label>
-                     <textarea class="input-comment" name="comment" type="text" placeholder="I want to contact you because..."required></textarea>
+                     <textarea class="input-comment" name="comment" type="comment" placeholder="I want to contact you because..."></textarea>
                      <button class="send" type="submit" value="Submit">Send</button>
+                      <label class="submit-message">
+                        <?php
+                          if(empty($_POST) === false){
+                            $firstname = $_POST['firstname'];
+                            $lastname = $_POST['lastname'];
+                            $email = $_POST['email'];
+                            $subject = $_POST['subject'];
+                            $comment = $_POST['comment'];
+
+                            // error messages
+                            if(empty($firstname) || empty($lastname) || empty($email) || empty($subject) || empty($comment)){
+                              $errors= 'All fields are required!';
+                              echo "$errors<br>";
+                            }
+                            if(filter_var($email, FILTER_VALIDATE_EMAIL) === false){
+                              $errors = 'The given email is not correct or does not exist!';
+                              echo "$errors<br>";
+                            }
+                            if(ctype_alpha($firstname) === false){
+                              $errors = 'Your first name cannot contain non-letters!';
+                              echo "$errors<br>";
+                            }
+                            if(ctype_alpha($lastname) === false){
+                              $errors = 'Your last name cannot contain non-letters!';
+                              echo "$errors<br>";
+                            }
+
+                            // after everything is complete
+                            if(!empty($firstname) && !empty($lastname) && !empty($email) && !empty($subject) && !empty($comment)
+                              && filter_var($email, FILTER_VALIDATE_EMAIL)
+                              && ctype_alpha($firstname)
+                              && ctype_alpha($lastname)) {
+                                // echo "Firstname: $firstname<br>";
+                                // echo "Lastname: $lastname<br>";
+                                // echo "Email-address: $email<br>";
+                                // echo "Subject: $subject<br>";
+                                // echo "Comment: $comment<br>";
+                                echo "Thank you! Message is succesfully sent";
+                            }
+                          }
+                        ?>
+                    </label>
                 </form>
-            </div>
-            <a href="#top" class="scrollToTop">Scroll To Top</a>
+                <div class="footer-top-border">
+                </div>
+                <div class="footer">
+                  <div class="footer-about">
+                    <h2>I</h2>
+                    <h2>Want</h2>
+                    <h2>A</h2>
+                    <h2>Color for this footer :(</h2>
+                </div>
+            <a href="#top" class="scroll-to-top">Scroll To Top</a>
         <script rel="src/js/index.js" type="text/javascript"></script>
     </body>
 </html>

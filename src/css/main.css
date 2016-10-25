@@ -55,12 +55,19 @@ textarea{
 
 .profile-picture{
   margin: 0 auto;
+  margin-top: 50px;
   background-color: #FFFFFF;
   width: 200px;
   height: 200px;
   border-radius: 50%;
 }
 
+.jumbotron-info{
+    position: relative;
+    padding: 30px 50px 0 0;
+    font-size: 1em;
+    text-align: right;
+}
 /*End of Head*/
 
 /*Information*/
@@ -96,25 +103,25 @@ textarea{
     padding: 0 40px;
 }
 
-.skillsLeft{
+.skills-left{
     width: 33%;
     float: left;
     background-color: #FFFFFF;
 }
 
-.skillsMiddle{
+.skills-middle{
   float: left;
   width: 33%;
   background-color: #FFFFFF;
 }
 
-.skillsRight{
+.skills-right{
     float: left;
     width: 33%;
     background-color: #FFFFFF;
 }
 
-.skillsImages{
+.skills-images{
   width: 75%;
   margin-top: -10%;
 }
@@ -134,11 +141,15 @@ textarea{
   width:50%;
   text-align: center;;
   background-color: #FFFFFF;
-  padding: 50px;
+  overflow: hidden;
 }
 
 .contact-header{
   margin-bottom: 20px;
+}
+
+.submit-message{
+  padding-bottom: 25px;
 }
 
 .send {
@@ -149,6 +160,7 @@ textarea{
     padding: 10px 40px 10px 40px;
     background-color: #fe2f22;
     border: none;
+    margin-bottom: 25px;
 }
 
 .send:hover {
@@ -156,9 +168,21 @@ textarea{
     background-color: #e6e6e6;
 }
 
+
 /*End of Contact-form*/
 
-.scrollToTop{
+/*Start Footer*/
+.footer{
+  height: 30vh;
+  width: 100%;
+  background-color: #5e5e5e;
+  color: #ffffff;
+}
+
+
+/*End of Footer*/
+
+.scroll-to-top{
   text-align: center;
   display: block;
   cursor: pointer;
@@ -169,12 +193,16 @@ textarea{
   text-decoration: none;
 }
 
-.scrollToTop:hover {
+.scroll-to-top:hover {
     color: #000000;
     background-color: #FFFFFF;
 }
 
 @media screen and (max-width: 1030px){
+    .jumbotron-info{
+      padding: 0;
+    }
+
     .info-container-left{
         width: 100vw;
     }
@@ -189,10 +217,10 @@ textarea{
       width: 65%;
       margin-top: -20%;
     }
-    .skillsLeft{
+    .skills-left{
         width: 100%;
     }
-    .skillsRight{
+    .skills-right{
         width: 100%;
     }
     .contact-form{
