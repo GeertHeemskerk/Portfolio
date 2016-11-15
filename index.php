@@ -96,15 +96,74 @@
                         ?>
                     </label>
                 </form>
-                <div class="footer-top-border">
-                </div>
                 <div class="footer">
-                  <div class="footer-about">
-                    <h2>I</h2>
-                    <h2>Want</h2>
-                    <h2>A</h2>
-                    <h2>Color for</h2>
-                </div>
+                  <div class="personal-holder">
+                    <h2 class="personal-information">Personal information</h2>
+                    <div class="contact">
+                        <p>Phonenumber:</p>
+                          <p>06-12345678</p><br>
+                        <p>Email:</p>
+                          Geert@competa.com
+                    </div>
+                    <div class="country">
+                      <p>Country:</p>
+                        <p>The Netherlands</p><br>
+                      <p>rovince:</p>
+                        South-Holland
+                    </div>
+                  </div>
+
+                  <div class="projects-holder">
+                    <h2 class="projects-information">Projects I worked on</h2>
+                    <div class="projects">
+                        <p>HHS(Haagse Hooge School):</p>
+                          <p>AngularJS,Sass,HTML5,Grunt</p><br>
+                        <p>Competa-Dashboard:</p>
+                          PHP7,SQL,Sass,HTML5,Gulp
+                    </div>
+                    <div class="developer">
+                      <p>Competa website:</p>
+                        <p>Wordpress,Sass,HTML5,PHP5</p><br>
+                      <p>Type developer:</p>
+                        Front-end
+                    </div>
+                  </div>
+
+                  <div class="projects-holder">
+                    <h2 class="projects-information">Interests</h2>
+                    <div class="projects">
+                        <p>My intrests:</p>
+                          <p>I am interested in Design</p><br>
+                        <p>Next education:</p>
+                          <p>HHS(The Heague)CMD(Commucation Media Design)</p>
+                    </div>
+                    <div class="developer">
+                      <p>End of my education:</p>
+                        <p>2017 and for CMD 2021</p>
+                    </div>
+                  </div>
+
+                  <div class="projects-holder">
+                    <h2 class="projects-information">Motivation</h2>
+                    <div class="projects">
+                        <p>Loving the job:</p>
+                          <p>Never thought i would like front-end so much!</p><br>
+                        <p>Communication is the key:</p>
+                          <p>I am a social developer that wants to communicate all the time.</p>
+                    </div>
+                    <div class="developer">
+                      <p>User friendly:</p>
+                        <p>I am not a developer that only designs for looks but also for user experience!</p><br>
+                    </div>
+                  </div>
+              </div>
+              <div class="img-holder">
+                <a href="https://www.linkedin.com/in/geert-heemskerk-7b9048113?trk=hp-identity-name"><img src="img/linkedin.png" class="social-media-logos"></a>
+                <a href="https://www.facebook.com/geert.heemskerk.9"><img src="img/facebook.png" class="social-media-logos"></a>
+                <a href="http://steamcommunity.com/id/YeTaZ/"><img src="img/steam.png" class="social-media-logos"></a>
+                <a href="https://plus.google.com/104941138759102627696 "><img src="img/g+.png" class="social-media-logos"></a>
+              </div>
+            </div>
             <a href="#top" class="scroll-to-top">Scroll To Top</a>
         <script rel="src/js/index.js" type="text/javascript"></script>
     </body>
